@@ -204,5 +204,15 @@
         align-items: center;
       }
     }
+    @media (min-width: 601px) {
+      .hero {
+        height: 69%;
+        margin-bottom: 20px;
+      }
+      .hero img {
+        height: 100%;
+      }
+
+    }
 
     

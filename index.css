@@ -16,7 +16,7 @@
     .banner {
       display: flex;
       align-items: center;
-      justify-content: space-between; /* added for right-side links */
+      justify-content: space-between;
       padding: 12px 20px;
       background: #000;
     }
@@ -30,7 +30,7 @@
     .divider {
       width: 2px;
       height: 40px;
-      background: #ff0000; /* red line */
+      background: #ff0000; 
       margin-right: 15px;
     }
 
@@ -69,16 +69,15 @@
     /* Hero Banner */
     .hero {
       width: 100%;
-      height: 700px; 
+      height: 700vh; 
       background: #f9f9f9;
       display: flex;
-      overflow: hidden;
-      margin-bottom: 30px; /* space between banner and Explore button */
+      margin-bottom: 30px;
     }
 
     .hero img {
       width: 100%;
-      height: 700px;
+      height: 500px;
       object-fit: cover;
     }
     /* css styling for the main div, make the footer stick to the bottom */
@@ -90,15 +89,17 @@
 
     /* Explore button */
     .explore-btn {
-      display: block;
-      margin-left:900px;
-      width: 60px;
+    
+      width: fit-content;
+      justify-content: center;
+      display: flex;
       padding: 12px 28px;
       background: #c30000;
       color: #fff;
       font-weight: 700;
       text-decoration: none;
       border-radius: 6px;
+      margin-left: 46%;
     }
 
     .explore-btn:hover {
@@ -203,3 +204,5 @@
         align-items: center;
       }
     }
+
+    

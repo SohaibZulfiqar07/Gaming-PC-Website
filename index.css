@@ -7,7 +7,6 @@
       font-family: Arial, sans-serif;
       background: #fff;
       color: #222;
-      /* added to make the footer stick to the bottom */
       display: flex; 
       flex-direction: column; 
     }
@@ -85,7 +84,7 @@
       height: 500px;
       object-fit: cover;
     }
-    /* this part is to stick footer to bottom */
+    /* footer stick to bottom */
     .main {
     flex: 1;
     display: flex;

@@ -18,7 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     // check for the login info already saved, if user put this, the user will be brought to the home page..
-    if (email === "test@cyberbuilds.com" && password === "12345") {
+     const savedEmail = localStorage.getItem("cyberbuilds_email");
+    const savedPassword = localStorage.getItem("cyberbuilds_password");
+
+    if (email === savedEmail && password === savedPassword ) {
       alert("Login successful! Redirecting to homepage...");
       window.location.href = "index.html"; // Redirect to index page
     } else {

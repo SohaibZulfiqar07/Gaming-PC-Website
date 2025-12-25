@@ -1,0 +1,182 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Audiowide&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      /* added to make the footer stick to the bottom */
+      display: flex; 
+      flex-direction: column;
+    }
+
+    /* Top banner */
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      background: #000;
+    }
+
+    .banner img {
+      height: 50px;
+      width: auto;
+      margin-right: 15px;
+    }
+
+    .divider {
+      width: 2px;
+      height: 40px;
+      background: #ff0000;
+      margin-right: 15px;
+    }
+
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text {
+      font-family: 'Orbitron', 'Audiowide', sans-serif;
+      font-size: 22px;
+      color: #ff0000;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .slogan {
+      font-family: 'Orbitron', 'Audiowide', sans-serif;
+      font-size: 14px;
+      color: #ff4d4d;
+      font-style: italic;
+    }
+
+    .banner-right a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .banner-right a:hover {
+      color: #c30000;
+    }
+    
+     /* css styling for the main div, make the footer stick to the bottom */
+    .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    }
+
+    /* Categories Page Section */
+    .categories-page {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .categories-page h2 {
+      text-align: center;
+      font-family: 'Orbitron', 'Audiowide', sans-serif;
+      color: #c30000;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid container for sections */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 sections per row */
+      gap: 30px;
+    }
+
+    /* Make each section clickable like a button */
+    .category-section {
+      display: flex;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      min-height: 250px; /* larger sections */
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .category-section:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .category-section img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .category-content {
+      width: 50%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .category-content h3 {
+      font-family: 'Orbitron', 'Audiowide', sans-serif;
+      font-size: 22px;
+      color: #c30000;
+      margin-bottom: 12px;
+    }
+
+    .category-content p {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Footer (from login page) */
+    .footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #c30000;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer-slogan {
+      color: #ff4d4d;
+      font-style: italic;
+      margin: 8px 0;
+    }
+
+    .footer-social img {
+      width: 22px;
+      height: 22px;
+      margin: 0 6px;
+      object-fit: contain;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: 1fr; /* stack sections on smaller screens */
+      }
+      .category-section {
+        flex-direction: column;
+      }
+      .category-section img, .category-content {
+        width: 100%;
+      }
+    }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cyber Builds Checkout</title>
+    <link rel="stylesheet" href="cont.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="banner">
+    <div style="display:flex; align-items:center;">
+      <img src="cyberbuilds-logo.JPG" alt="Cyber Builds Logo">
+      <div class="divider"></div>
+      <div class="banner-text">
+        <div class="logo-text">Cyber Builds</div>
+        <div class="slogan">Dream. Build. Conquer.</div>
+      </div>
+    </div>
+    <div class="banner-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- main div, to encapsulate all the content on the home page between the header and the footer --> 
+  <div class="main">
+
+  <!-- Checkout Form -->
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <form action="thankyou.html" method="get">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Delivery Address</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <div class="payment-method">
+        <label>
+          <input type="checkbox" required>
+          Cash on Delivery
+        </label>
+      </div>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Cyber Builds. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="login.html">Login</a> |
+      <a href="signup.html">Sign Up</a> |
+      <a href="contact.html">Contact Us</a>
+    </p>
+    <p class="footer-slogan">Dream. Build. Conquer.</p>
+  </footer>
+
+</body>
+</html>

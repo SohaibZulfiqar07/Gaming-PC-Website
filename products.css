@@ -54,10 +54,15 @@ html, body {
   font-weight: bold;
   text-decoration: none;
   margin-left: 15px;
+  background-color:#c30000;
+  border-radius: 6px;
+  padding: 10px 21px;
 }
 
 .banner-right a:hover {
-  color: #c30000;
+   color: #c30000;
+   color: black;
+   background-color: #a80000;
 }
 
 /* css styling for the main div, make the footer stick to the bottom */

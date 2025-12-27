@@ -94,7 +94,7 @@
 
     /* Explore button */
     .explore-btn {
-    
+    margin-bottom: 100px;
       width: fit-content;
       justify-content: center;
       display: flex;
@@ -111,33 +111,66 @@
       background: #a80000;
     }
 
-    /* Categories Section */
+     /* Categories Section */
     .categories {
-      font-family: 'Oswald';
-      color:#fff;
-      background-color: #222;
-      height:fit-content;
-      border: 1px solid black;
-      border-radius: 10px;
-      margin: 10px;
       display: flex;
-      flex-direction: column;
       flex-wrap: wrap;
-      align-items: center;
+      justify-content: center;
       gap: 20px;
       padding: 20px 0;
+      background: #fff;
     }
 
     /* Make category cards clickable */
- /* Container */
+    .category-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 220px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+/* hover */
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+/* image */
+    .category-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+/* headings and paragraphs */
+    .category-card h3 {
+      font-family: 'Orbitron', 'Audiowide', sans-serif;
+      font-size: 16px;
+      color: #c30000;
+      margin-bottom: 6px;
+    }
+
+    .category-card p {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #555;
+    }
+
+
+    /* story Section */
+
 .story {
-  font-family: 'Oswald', sans-serif; /* bold, modern */
+  font-family: 'Oswald', sans-serif; 
   color: #fff;
-  background-color: #1a1a1a; /* dark gray instead of pure black */
-  height: fit-content;
-  border: 1px solid #111; /* subtle dark border */
+  background-color: #1a1a1a; 
+  border: 1px solid #111; 
   border-radius: 10px;
-  margin:100px 10px 10px;
+  margin:50px 10px 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -146,7 +179,7 @@
   padding: 20px 0;
 }
 
-/* Category cards */
+/* story cards */
 .story-card {
   display: flex;
   height: 500px;
@@ -172,14 +205,6 @@
 
 .story-card img:hover {
   transform: scale(1.1);
-}
-
-/* Optional: headings inside card */
-.story-card h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 10px 0 5px 0;
 }
 
 /* Optional: paragraph inside card */

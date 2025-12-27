@@ -69,12 +69,51 @@ html, body {
 .banner-right a:hover {
   color: #c30000;
 }
+
+
  /* css styling for the main div, make the footer stick to the bottom */
     .main {
     flex: 1;
     display: flex;
     flex-direction: column;
     }
+
+
+    /* Order Summary */
+.order-summary {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #f3f3f3;
+}
+
+.order-summary h3 {
+  margin-top: 0;
+  color: #c30000;
+  font-family: 'Orbitron', 'Audiowide', sans-serif;
+  text-align: center;
+}
+
+.summary-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-content img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.summary-details p {
+  margin: 3px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 /* Main container / card */
 .container,

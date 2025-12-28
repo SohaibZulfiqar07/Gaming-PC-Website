@@ -65,6 +65,28 @@ html, body {
    background-color: #a80000;
 }
 
+.return-btn{
+      margin: 20px 30px 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .return-btn a{
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      padding: 12px 28px;
+      background: #c30000;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .return-btn a:hover {
+      background: #a80000;
+    }
+
 /* css styling for the main div, make the footer stick to the bottom */
     .main {
     flex: 1;

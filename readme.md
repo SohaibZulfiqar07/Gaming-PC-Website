@@ -13,7 +13,7 @@ Cyber Builds is a modern gaming PC e-commerce platform that allows users to brow
 | Name | Roll Number |
 |------|-------------|
 | Azeem | 2501276 |
-| Hasnain | - |
+| Hasnain | 2501381 |
 | Sohaib | 2501303 |
 
 ## 🛠️ Technologies Used
